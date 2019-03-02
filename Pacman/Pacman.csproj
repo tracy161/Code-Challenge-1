@@ -43,6 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Enum.cs" />
+    <Compile Include="InstructionArguments.cs" />
+    <Compile Include="Pacman.cs" />
+    <Compile Include="PacmanDriver.cs" />
+    <Compile Include="PlaceInstructionArguments.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
