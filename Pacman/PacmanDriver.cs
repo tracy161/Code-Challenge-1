@@ -32,7 +32,7 @@ namespace Pacman
                     }
                     else
                     {
-                        response = Pacman.LastError;
+                        response = Pacman.Error;
                     }
                     break;
                 case Instruction.Move:
@@ -42,7 +42,7 @@ namespace Pacman
                     }
                     else
                     {
-                        response = Pacman.LastError;
+                        response = Pacman.Error;
                     }
                     break;
                 case Instruction.Left:
@@ -52,7 +52,7 @@ namespace Pacman
                     }
                     else
                     {
-                        response = Pacman.LastError;
+                        response = Pacman.Error;
                     }
                     break;
                 case Instruction.Right:
@@ -62,7 +62,7 @@ namespace Pacman
                     }
                     else
                     {
-                        response = Pacman.LastError;
+                        response = Pacman.Error;
                     }
                     break;
                 case Instruction.Report:

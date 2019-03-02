@@ -10,14 +10,14 @@ namespace Pacman
     {
         public Pacman()
         {
-            LastError = "";
+            Error = "";
         }
         private const int TABLE_SIZE = 5;
         private int? _x;
         private int? _y;
         private Facing _facing;
 
-        public string LastError { get; set; }
+        public string Error { get; set; }
 
         public bool Place(int x, int y, Facing facing)
         {
@@ -116,7 +116,7 @@ namespace Pacman
         {
             if (!_x.HasValue || !_y.HasValue)
             {
-                LastError = String.Format("Pacman cannot {0} until it has been placed on the table.", action);
+                Error = String.Format("Pacman cannot {0} until it has been placed on the table.", action);
                 return false;
             }
             return true;
@@ -126,7 +126,7 @@ namespace Pacman
         {
             if (x < 0 || y < 0 || x >= TABLE_SIZE || y >= TABLE_SIZE)
             {
-                LastError = String.Format("Pacman cannot be {0} outside the table", action);
+                Error = String.Format("Pacman cannot be {0} outside the table.", action);
                 return false;
             }
             return true;
