@@ -35,7 +35,7 @@ namespace Pacman
 
         private static string PromtForCommand()
         {
-            Console.WriteLine("Please Enter your Input: ");
+            Console.WriteLine("Please Enter your Position of Pacman: ");
             return Console.ReadLine();
         }
     }
